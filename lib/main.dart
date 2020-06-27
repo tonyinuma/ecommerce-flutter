@@ -1,4 +1,11 @@
+import 'package:ecommerce/Widgets/Brand.dart';
 import 'package:ecommerce/Widgets/Content.dart';
+import 'package:ecommerce/Widgets/Feature.dart';
+import 'package:ecommerce/Widgets/Footer.dart';
+import 'package:ecommerce/Widgets/Form.dart';
+import 'package:ecommerce/Widgets/Header.dart';
+import 'package:ecommerce/Widgets/Items.dart';
+import 'package:ecommerce/Widgets/Services.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -13,7 +20,17 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: Content(
-        child: Placeholder(),
+        child: Column(
+          children: <Widget>[
+            HeaderWidget(),
+            BrandWidget(),
+            FeatureWidget(),
+            ItemsWidget(),
+            ServicesWidget(),
+            FormWidget(),
+            FooterWidget()
+          ],
+        ),
       ),
     );
   }
