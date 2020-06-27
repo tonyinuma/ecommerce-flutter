@@ -25,11 +25,17 @@ class MyApp extends StatelessWidget {
           child: Column(
             children: <Widget>[
               HeaderWidget(),
+              SizedBox(height: 8.0),
               BrandWidget(),
+              SizedBox(height: 8.0),
               FeatureWidget(),
+              SizedBox(height: 8.0),
               ItemsWidget(),
+              SizedBox(height: 8.0),
               ServicesWidget(),
+              SizedBox(height: 8.0),
               FormWidget(),
+              SizedBox(height: 8.0),
               FooterWidget()
             ],
           ),
