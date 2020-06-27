@@ -20,8 +20,8 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: Scaffold(
-        body: Content(
-            child: SingleChildScrollView(
+        body: SingleChildScrollView(
+            child: ContentWidget(
           child: Column(
             children: <Widget>[
               HeaderWidget(),

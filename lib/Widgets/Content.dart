@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class ContentWidget extends StatelessWidget {
   final Widget child;
 
-  Content({this.child});
+  ContentWidget({this.child});
 
   @override
   Widget build(BuildContext context) {
