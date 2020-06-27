@@ -19,18 +19,21 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: Content(
-        child: Column(
-          children: <Widget>[
-            HeaderWidget(),
-            BrandWidget(),
-            FeatureWidget(),
-            ItemsWidget(),
-            ServicesWidget(),
-            FormWidget(),
-            FooterWidget()
-          ],
-        ),
+      home: Scaffold(
+        body: Content(
+            child: SingleChildScrollView(
+          child: Column(
+            children: <Widget>[
+              HeaderWidget(),
+              BrandWidget(),
+              FeatureWidget(),
+              ItemsWidget(),
+              ServicesWidget(),
+              FormWidget(),
+              FooterWidget()
+            ],
+          ),
+        )),
       ),
     );
   }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class Content extends StatelessWidget {
+class ContentWidget extends StatelessWidget {
   final Widget child;
 
   Content({this.child});
